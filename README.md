@@ -22,7 +22,30 @@ Algorithms designed to manipulate or access data stored in various data structur
   - Searching: Techniques for finding an element within a data structure, such as linear search, binary search, or depth-first search.
   - Sorting: Techniques for arranging elements in a specific order, such as bubble sort, merge sort, or quicksort.
   - Traversing: Methods for visiting and processing each node in a data structure, like in-order, pre-order, and post-order traversal in trees.
-  - 
+
+# Random Example:
+
+`  private void percolateDown(int elem) {
+        int k = (size - 2) / 2;
+        while (elem <= k) {
+            int leftChild = getLeftChildIndex(elem);
+            int rightChild = getRightChildIndex(elem);
+            int biggerChild = leftChild; `
+    
+           ` if (rightChild < size && compare(data[rightChild], data[leftChild])) {
+                biggerChild = rightChild;
+            } `
+            if (biggerChild < size && compare(data[biggerChild], data[elem])) {
+                Comparable<T> temp = data[elem];
+                data[elem] = data[biggerChild];
+                data[biggerChild] = temp; 
+                elem = biggerChild;
+            } else {
+                break;
+            }
+        }
+    } `
+
 ## Example: Finding the Quickest Route
 Given a structure representing a geographic map, an algorithm for finding the quickest route from point A to point B involves using graph traversal algorithms, such as Dijkstra's algorithm or A* search algorithm, to find the shortest path between the two points.
 
