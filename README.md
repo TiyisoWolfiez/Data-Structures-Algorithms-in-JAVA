@@ -24,7 +24,7 @@ Algorithms designed to manipulate or access data stored in various data structur
   - Traversing: Methods for visiting and processing each node in a data structure, like in-order, pre-order, and post-order traversal in trees.
 
 ## Random Example:
- 
+ https://github.com/TiyisoWolfiez/Data-Structures-Algorithms-in-JAVA/blob/c0cd401044d565dddbc285bacc426f6cdfbb9148/Codes/BST(Binary%20Search%20Tree)/BST.java#L202
 
 ## Example: Finding the Quickest Route
 Given a structure representing a geographic map, an algorithm for finding the quickest route from point A to point B involves using graph traversal algorithms, such as Dijkstra's algorithm or A* search algorithm, to find the shortest path between the two points.
