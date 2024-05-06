@@ -25,8 +25,8 @@ Algorithms designed to manipulate or access data stored in various data structur
 
 ## Random Example:
     ```python
-def hello_world():
-    print("Hello, world!")
+    def hello_world():
+      print("Hello, world!")
 
 
 ## Example: Finding the Quickest Route
