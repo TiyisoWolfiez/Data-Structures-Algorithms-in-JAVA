@@ -25,16 +25,16 @@ Algorithms designed to manipulate or access data stored in various data structur
 
 # Random Example:
 
-`  private void percolateDown(int elem) {
+ ```  private void percolateDown(int elem) {
         int k = (size - 2) / 2;
         while (elem <= k) {
             int leftChild = getLeftChildIndex(elem);
             int rightChild = getRightChildIndex(elem);
-            int biggerChild = leftChild; `
+            int biggerChild = leftChild; 
     
-           ` if (rightChild < size && compare(data[rightChild], data[leftChild])) {
+            if (rightChild < size && compare(data[rightChild], data[leftChild])) {
                 biggerChild = rightChild;
-            } `
+            } 
             if (biggerChild < size && compare(data[biggerChild], data[elem])) {
                 Comparable<T> temp = data[elem];
                 data[elem] = data[biggerChild];
@@ -44,7 +44,7 @@ Algorithms designed to manipulate or access data stored in various data structur
                 break;
             }
         }
-    } `
+    } ```
 
 ## Example: Finding the Quickest Route
 Given a structure representing a geographic map, an algorithm for finding the quickest route from point A to point B involves using graph traversal algorithms, such as Dijkstra's algorithm or A* search algorithm, to find the shortest path between the two points.
