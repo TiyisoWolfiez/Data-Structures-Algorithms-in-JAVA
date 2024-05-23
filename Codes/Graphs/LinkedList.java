@@ -35,6 +35,13 @@ public class LinkedList<T> {
         size++;
     }
 
+    public void addFirst(T data) {
+        Node<T> newNode = new Node<>(data);
+        newNode.next = head;
+        head = newNode;
+        size++;
+    }
+
     // Method to get the data at the specified index
     public T get(int index) {
         if (index < 0 || index >= size) {
